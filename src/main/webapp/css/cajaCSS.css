@@ -1,0 +1,239 @@
+.info{
+    background-color: #28292B;
+
+    margin: 15px;
+    margin-top: 30px;
+    border: 1px solid;
+    color: #ddd;
+}
+
+.container-caja{
+    padding: 20px;
+}
+
+.ventana-caja{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding: 0;
+}
+
+/* titulo */
+.text-center{
+    margin-bottom: 15px;
+    margin-top: 5px;
+    font-size: 33px;
+    font-weight: 900; /* Peso de la fuente */
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+/* Formulario para agregar un venta */
+
+.izquierda{
+    width: 540px;
+    margin-top: 43px;
+}
+
+#formulario-venta{
+
+}
+
+.body-datos{
+    border: 1px solid #2874A6;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.form-group{
+    display: flex;
+    margin: 0px 10px;
+    margin-bottom: 1rem;
+}
+
+/* Buscar y encontrar cliente*/
+.buscarCliente{
+    display: flex;
+    margin-right: 20px;
+}
+
+.buscarCliente input{
+    width: 110px;
+}
+
+.buscarCliente button{
+    width: 76px;
+}
+
+.cliente{
+    width: 100%;
+}
+
+/* Buscar y encontrar producto*/
+.buscarProducto{
+    display: flex;
+    margin-right: 20px;
+}
+
+.buscarProducto input{
+    width: 110px;
+}
+
+.buscarProducto button{
+    width: 76px;
+}
+
+.producto{
+    width: 100%;
+}
+
+.productoPrecio{
+    width: 186px;
+    margin-right: 20px;
+}
+
+.productoCantidad{
+    width: 90px;
+    margin-right: 20px;
+}
+
+.productoStock{
+    width: 172px;
+}
+
+/*Estilo para los input del formulario*/
+.form-control{
+    background-color: #1A1A1A;
+    border-color: #585858;
+    color: #ddd;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:hover{
+    background-color: #1A1A1A;
+    color: #ddd;
+}
+
+.form-control:invalid{
+    background-color: #1A1A1A;
+    color: #ddd;
+}
+
+.form-control:valid{
+    background-color: #1A1A1A;
+    color: #ddd;
+}
+
+/* Estilo para cuando el campo está enfocado */
+.form-control:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-color: #007bff;
+}
+
+/* Estilos para autocompletado en Chrome, Safari y Edge */
+input.form-control:-webkit-autofill,
+input.form-control:-webkit-autofill:hover,
+input.form-control:-webkit-autofill:focus,
+input.form-control:-webkit-autofill:active {
+    background-color: #1A1A1A !important;
+    color: #ddd !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    -webkit-box-shadow: 0 0 0 30px #1A1A1A inset !important;
+    -webkit-text-fill-color: #ddd !important;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Estilos para autocompletado en Firefox */
+input.form-control:-moz-autofill {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    color: #ddd !important;
+    transition: border-color 0.5s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* BOTON*/
+
+.boton-agregar{
+    margin: 0px 10px;
+}
+/* CSS DE LA PARTE DERECHA (TABLA VENTA)*/
+
+.derecha{
+    
+}
+
+.nroserie{
+    display: flex;
+    align-items: center; /* Alinear verticalmente el label y el input */
+    justify-content: flex-end; /* Posicionarlos a la derecha del contenedor */
+    margin-bottom: 5px;
+}
+
+.nroserie label {
+    margin-right: 10px; /* Espacio entre el label y el input */
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.nroserie input {
+    flex: 1; /* Ajustar el tamaño del input si es necesario */
+    max-width: 130px; /* Opcional: Limitar el ancho máximo del input */
+    text-align: center;
+}
+
+/* Tabla de la venta a realizar*/
+.scroll{
+    height: 350px; /* Altura fija para el div */
+    overflow-y: auto; /* Agregar scroll vertical si el contenido excede la altura */
+    overflow-x: hidden; /* Evitar el scroll horizontal */
+    padding-right: 1px; /* Añadir espacio para evitar el solapamiento del scroll */
+    border: 1px solid #585858; /* Bordes opcionales para visualizar mejor */
+}
+
+#tabla-ventas {
+    background-color: #1A1A1A;
+    margin-bottom: 0;
+    color: #ddd;
+}
+
+.cabecera-venta{
+    text-align: center;
+    background-color: #007161;
+    color: #ddd;
+
+}
+
+.table .cabecera-venta th{
+    border-top: 0;
+    border-bottom: 0;
+    vertical-align: middle;
+}
+
+
+.contenido-venta td{
+    border-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.contenido-venta tr, .cabecera-venta tr{
+    border: 1px solid #585858; /* Color al borde de el body de la tabla*/
+}
+
+.montoTotal{
+    display: flex;
+    margin-top: 5px;
+}
+
+.montoTotal input{
+    width: 150px;
+    padding: 6px 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 50px;
+}
+.comprobantePago{
+    margin-bottom: 20px;
+}
+
+

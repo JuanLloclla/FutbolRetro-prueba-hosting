@@ -1,0 +1,86 @@
+.info{
+    background-color: #28292B;
+    height: 640px; /* Altura*/
+    margin: 15px;
+    margin-top: 30px;
+    border: 1px solid;
+    color: #ddd;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.titulo {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #e74c3c;
+}
+.texto{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.gmail{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 14px;
+    background-color: #444;
+    color: #ccc;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 14px;
+    background-color: #444;
+    color: #ccc;
+}
+.enviarQueja{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2980b9;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.enviarQueja:hover {
+    background-color: #2471a3;
+}
+.support {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #555;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.support h2 {
+    color: #27ae60;
+}
+.support a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+.support a:hover {
+    text-decoration: underline;
+}
+
+

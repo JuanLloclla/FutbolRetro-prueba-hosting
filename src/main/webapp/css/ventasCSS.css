@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+.info{
+    background-color: #28292B;
+    height: 640px; /* Altura*/
+    margin: 15px;
+    margin-top: 30px;
+    border: 1px solid;
+    color: #ddd;
+}
+
+#titulotabla{
+    background-color: #4b0082;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.scroll{
+    height: 566px; /* Altura fija para el div */
+    overflow-y: auto; /* Agregar scroll vertical si el contenido excede la altura */
+    overflow-x: hidden; /* Evitar el scroll horizontal */
+    padding-right: 1px;  /* Añadir espacio para evitar el solapamiento del scroll */
+    border: 1px solid #585858; /* Bordes opcionales para visualizar mejor */
+}
+
+/* Estilos para la tabla */
+.table{
+    width: 100%;
+    background-color: #1A1A1A;
+    color: #ddd;
+    border-spacing: 0; /* Eliminar espacio entre celdas */
+    border-collapse: separate;
+}
+
+.cabecera {
+    text-align: center;
+    background-color: #007161;
+    color: #ddd;
+}
+
+.cabecera2 {
+    background-color: #28292B;
+}
+
+.cabecera th, .cabecera2 th, .table thead th {
+    border-top: 1px solid #585858; /* Añadir borde superior */
+    border-bottom: 1px solid #585858; /* Añadir borde inferior */
+    vertical-align: middle !important;
+}
+
+.contenido td{
+    border-top: 1px solid #585858; /* Añadir borde superior */
+    border-bottom: 1px solid #585858; /* Añadir borde inferior */
+}
+
+.contenido tr, .cabecera tr{
+    border: 1px solid #585858; /* Color al borde de el body de la tabla*/
+}
+
+#disabled{
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: #F5B7B1; /* Estilo para mostrar que está deshabilitado */
+    border-color: #F5B7B1;
+    text-decoration: none;
+}

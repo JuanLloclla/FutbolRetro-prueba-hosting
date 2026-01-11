@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+.info{
+    background-color: white;
+    height: 640px; /* Altura*/
+    margin: 15px;
+    margin-top: 30px;
+    border: 5px solid;
+    color: black;
+}
+
+#piechart_3d{
+    width: 650px;
+    height: 400px;
+    position: absolute;
+    top: 37%;
+    left: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%, -35%);
+}
+
+#chart_div{
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%, -35%)
+}
+

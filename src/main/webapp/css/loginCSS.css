@@ -1,0 +1,140 @@
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/fondoLogin.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #181818;
+    margin: 0px 100px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    height: 600px;
+    gap: 20px;
+}
+
+.login{
+    width: 300px;
+    /*background-color: #25996B;*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #25996B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #005A44, #25996B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #005A44, #25996B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* Logo de la empresa*/
+.logo{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.logo img{
+    width: 170px;
+    height: 170px;
+}
+
+/* Formulario login*/
+.login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Titulo */
+.login h2{
+    margin: 15px 0px;
+    color: #1A1A1A; /* Color de texto */
+    font-size: 30px; /* Tamaño de fuente */
+    font-weight: 900; /* Peso de la fuente */
+    text-align: center; /* Centrar el texto */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-shadow:
+        0 0 5px rgba(255, 255, 255, 0.5),
+        0 0 10px rgba(255, 255, 255, 0.4),
+        0 0 15px rgba(255, 255, 255, 0.3),
+        0 0 20px rgba(255, 255, 255, 0.2),
+        0 0 25px rgba(255, 255, 255, 0.1);
+
+}
+
+.login form h3{
+    color: #1A1A1A; /* Cambia el color del texto a un tono más oscuro */
+    font-weight: bold; /* Añade negrita para resaltar los títulos */
+    font-size: 18px;
+    width: 200px;
+    margin: 10px 0px;
+}
+
+.controls, .buttons {
+    padding: 10px; /* Añade espacio interno para hacerlos más visibles */
+    border: 1px solid #ddd; /* Añade un borde para resaltar los controles */
+    border-radius: 4px; /* Añade esquinas redondeadas para suavizar la apariencia */
+    box-sizing: border-box; /* Ajusta el tamaño total del elemento incluyendo el relleno y el borde */
+}
+
+.controls {
+    background-color: #1A1A1A;
+    margin-bottom: 15px; /* Añade espacio inferior para separar los controles entre sí */
+    width: 200px;
+    transition: box-shadow 0.3s ease;
+}
+
+.controls:valid{
+    color: #ffff;
+    background-color: #0E6655;
+    border: 1px solid #000000;
+}
+
+.controls:focus {
+    outline: none;
+    box-shadow: 0 0 4px 3px rgba(210, 210, 210, 0.8);
+}
+
+.buttons {
+    margin-top: 60px;
+    background-color: #585858; /* Cambia el color de fondo del botón */
+    color: white; /* Cambia el color del texto del botón a blanco para que resalte */
+    font-size: 16px; /* Ajusta el tamaño del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón para indicar que es interactivo */
+    transition: background-color 0.3s ease; /* Añade una transición suave al cambiar el color de fondo */
+    border-color: #000000;
+    width: 110px;
+}
+
+.buttons:hover {
+    background-color: #414141 ; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+}
+
+.mensaje{
+    margin: 0;
+    font-weight: bold;
+    color: #cc0033;
+}
+
+/* Imagen de la derecha*/
+.publicidad{
+    width: 700px;
+}
+
+.publicidad img{
+    width: 100%;
+    height: 100%;
+}

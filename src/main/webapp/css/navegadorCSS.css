@@ -1,0 +1,128 @@
+*{
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-image: url('../img/fondoSistema.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container-fuera{
+    background-color: #181818;
+    margin: 0px 100px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.container-dentro{
+    background-color: #25996B;
+    border: 1px solid #25996B;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 1450px;
+    min-height: 780px;
+    box-sizing: content-box;
+}
+
+.navegador{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    max-width: 1420px;
+}
+
+.menu{
+    display: flex;
+    gap: 9px;
+    justify-content: center;
+    background-color: #202020;
+    padding: 5px;
+}
+
+.menu a{
+    color: #000000;
+    list-style: none;
+    text-decoration: none;
+    height: 100px;
+}
+
+/*div de cada menu (caja, cliente, usuario, etc..)*/
+.menu-tarjetas{
+    background-color: #005A44;
+    color: #F1F1F1;
+    padding: 10px;
+    width: 130px;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+/*Tamaño para los iconos del menu*/
+.menu-tarjetas i{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.menu-tarjetas p{
+    margin: 0;
+    height: 18px;
+    font-weight: bold;
+    font-size: 16.5px;
+}
+
+.menu-tarjetas:hover {
+    background-color: #272727;
+}
+
+.menu a.activo .menu-tarjetas {
+    background-color: #272727;
+}
+
+/*div Salir*/
+.exit{
+    width: 172px;
+    height: 110px;
+}
+.exit a{
+    background-color: #F1948A;
+    border: 1px solid #C0392B;
+    width: 150px;
+    height: 88px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 30px;
+    color: #C0392B;
+    cursor: pointer;
+    box-sizing: content-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*Tamaño del icono salir*/
+.exit i{
+    font-size: 40px;
+}
+
+.exit p{
+    margin: 30px 0px;
+    line-height: 1;
+}
+.exit a:hover{
+    background-color: #EC7063;
+}

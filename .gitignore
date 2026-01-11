@@ -1,0 +1,29 @@
+# Configuración sensible
+src/main/java/Config/Parametros.java.local
+
+# Build
+target/
+build/
+*.war
+*.ear
+*.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+.netbeans/
+nbproject/
+
+# Logs
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Maven
+dependency-reduced-pom.xml

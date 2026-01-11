@@ -1,0 +1,164 @@
+.info{
+    background-color: #28292B;
+    height: 640px; /* Altura*/
+    margin: 15px;
+    margin-top: 30px;
+    border: 1px solid;
+    color: #ddd;
+}
+
+.container-cliente{
+    padding: 20px;
+}
+
+.ventana-cliente{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0;
+}
+
+/* CSS DE LA PARTE IZQUIERDA (EL FORMULARIO)*/
+.izquierda{
+    width: 350px;
+}
+#formulario-cliente{
+
+}
+
+/*Titulo del formulario*/
+.text-center{
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+/*Los input del formulario*/
+.form-control{
+    background-color: #1A1A1A;
+    border-color: #585858;
+    color: #ddd;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:hover{
+    background-color: #1A1A1A;
+    color: #ddd;
+}
+
+.form-control:invalid{
+    background-color: #1A1A1A;
+    color: #ddd;
+}
+
+.form-control:valid{
+    background-color: #1A1A1A;
+    color: #ddd;
+}
+
+/* Estilo para cuando el campo está enfocado */
+.form-control:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-color: #007bff;
+}
+
+/* Estilos para autocompletado en Chrome, Safari y Edge */
+input.form-control:-webkit-autofill,
+input.form-control:-webkit-autofill:hover,
+input.form-control:-webkit-autofill:focus,
+input.form-control:-webkit-autofill:active{
+    background-color: #1A1A1A !important;
+    color: #ddd !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+    -webkit-box-shadow: 0 0 0 30px #1A1A1A inset !important;
+    -webkit-text-fill-color: #ddd !important;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Estilos para autocompletado en Firefox */
+input.form-control:-moz-autofill {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    color: #ddd !important;
+    transition: border-color 0.5s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/*Botones del formulario*/
+#agregar{
+    background-color: #16A085;
+    border-color: #16A085;
+}
+
+#actualizar{
+    background-color: #8E44AD;
+    border-color: #8E44AD;
+}
+
+.container-generador{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    gap: 40px;
+}
+
+.btnExcel img, .btnPDF img{
+    width: 50px;
+    height: 50px;
+}
+
+/* CSS DE LA PARTE DERECHA (TABLA CLIENTES)*/
+
+.derecha{
+    width: 900px;
+}
+
+#titulotabla{
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.scroll{
+    height: 550px; /* Altura fija para el div */
+    overflow-y: auto; /* Agregar scroll vertical si el contenido excede la altura */
+    overflow-x: hidden; /* Evitar el scroll horizontal */
+    padding-right: 1px; /* Añadir espacio para evitar el solapamiento del scroll */
+    border: 1px solid #585858; /* Bordes opcionales para visualizar mejor */
+}
+
+/* Estilos para la tabla */
+.table{
+    width: 100%;
+    background-color: #1A1A1A;
+    color: #ddd;
+}
+
+.cabecera{
+    text-align: center;
+    background-color: #007161;
+    color: #ddd;
+}
+
+.table .cabecera th{
+    border-top: 0;
+    border-bottom: 0;
+    vertical-align: middle;
+}
+
+
+.contenido td{
+    border-top: 0;
+}
+
+.contenido tr, .cabecera tr{
+    border: 1px solid #585858; /* Color al borde de el body de la tabla*/
+}
+
+.btn-group{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+
+
+
+
