@@ -142,17 +142,6 @@
                 </configuration>
             </plugin>
             
-            <!-- Plugin Tomcat embebido para ejecutar el WAR -->
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.2</version>
-                <configuration>
-                    <port>${port}</port>
-                    <path>/</path>
-                </configuration>
-            </plugin>
-            
             <!-- Plugin para gestionar dependencias -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -186,7 +175,31 @@
                             <goal>copy-dependencies</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                            <outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/lib</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            
+            <!-- Plugin para crear JAR ejecutable con todas las dependencias -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.5.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <createDependencyReducedPom>false</createDependencyReducedPom>
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>App.Main</mainClass>
+                                </transformer>
+                            </transformers>
+                            <finalName>futbolretro-app</finalName>
                         </configuration>
                     </execution>
                 </executions>
